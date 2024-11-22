@@ -48,7 +48,8 @@ jobs:
         run: pwd
 
       - name: additional debug
-        run: get-childitem env:
+        run: |
+          get-childitem env:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
