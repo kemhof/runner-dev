@@ -47,6 +47,9 @@ jobs:
       - name: get Directory info
         run: pwd
 
+      - name: additional debug
+        run: get-childitem env:
+
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
