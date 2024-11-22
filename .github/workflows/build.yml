@@ -30,7 +30,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Environment Variables
-        if: vars.ACTIONS_RUNNER_DEBUG == true
+        if: ACTIONS_RUNNER_DEBUG == true || ACTIONS_STEP_DEBUG == true
         run: |
           Get-ChildItem env:
         shell: pwsh
